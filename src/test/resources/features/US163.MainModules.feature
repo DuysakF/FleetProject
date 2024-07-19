@@ -2,11 +2,9 @@
 Feature:As a user,I want to view columns on the Vehicles Model
 
   Scenario: Drivers should not able to access the Vehicle Model page
-
     Given the user logged in as "driver"
     And user goes on  Vehicles Model
     Then users should see a message
-
 
   Scenario Outline: Both user should see ten columns on the Vehicle Model page
     Given the user logged in as "<userType>"
@@ -24,7 +22,7 @@ Feature:As a user,I want to view columns on the Vehicles Model
       |FUEL TYPE|
       |VENDORS|
 
-  Examples:
+    Examples:
       |userType     |
       |sales manager|
       |store manager|
